@@ -36,7 +36,7 @@ function SettingsContent() {
     appLogo: '',
     themeColor: '#2563eb',
     watermarkText: 'Created with Resume Builder',
-    footerText: '© 2024 Resume Builder. All rights reserved.'
+    footerText: '© 2025 Resume Builder. All rights reserved.'
   })
 
   useEffect(() => {

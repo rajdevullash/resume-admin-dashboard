@@ -422,6 +422,22 @@ export default function TemplatesPage() {
                         rows={2}
                       />
                     </div>
+                    <div className="space-y-2">
+                      <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Preview Image URL</label>
+                      <input
+                        type="url"
+                        required
+                        value={formData.previewImage}
+                        onChange={(e) => setFormData({ ...formData, previewImage: e.target.value })}
+                        className="w-full px-5 py-3 bg-slate-50 border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 rounded-2xl text-sm font-bold transition-all"
+                        placeholder="https://example.com/preview.png"
+                      />
+                      {formData.previewImage && (
+                        <div className="mt-2 p-2 bg-slate-50 rounded-xl">
+                          <img src={formData.previewImage} alt="Preview" className="w-full h-40 object-cover rounded-lg" />
+                        </div>
+                      )}
+                    </div>
                   </section>
 
                   <section className="space-y-6">
